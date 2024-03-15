@@ -1,5 +1,13 @@
 module.exports = {
     dsa: [
+        "ArrayList",
+        "BFSGraphList",
+        "BubbleSort",
+        // "DijkstraList",
+        // "InsertionSort",
+        // "MergeSort",
+        // "PrimsList",
+        "QuickSort",
         "DFSOnBST",
         "LRU",
         "LinearSearchList",

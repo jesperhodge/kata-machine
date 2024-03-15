@@ -1,0 +1,14 @@
+#!/bin/bash
+
+# Check if the file path argument is provided
+if [ -z "$1" ]; then
+    echo "Usage: $0 <file_path>"
+    exit 1
+fi
+
+file_path=$1
+
+# Get a random file name from the specified directory
+random_file=$(ls $file_path | awk 'BEGIN {srand();}{ if (rand() < 1/++n) result=$0} END {print result}')
+
+echo $random_file
